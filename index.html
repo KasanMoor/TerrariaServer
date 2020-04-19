@@ -1,1 +1,47 @@
 the server is down
+CTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Terraria Project</title>
+</head>
+<body>
+	<div class="container">
+	<p id="test"></p>
+	<form id="form-turn-server-on" action="server_on" method="GET">
+	<button type="submit">Turn on</button>
+	</form>
+	<form action="server_off" method="GET">
+	<button type="submit">Turn off</button>
+	</form>
+	</div>
+
+	<script>
+		document.getElementById("form-turn-server-on").addEventListener("submit", (event) => {
+		        event.preventDefault(); 
+		        let testChangeHtml = document.getElementById("test"); 
+		        testChangeHtml.innerText = "This is not a test! Evacuate now and forget about this whole programming bullshit."
+		});
+        
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
